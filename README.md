@@ -13,6 +13,6 @@ tags:
 
 talks:
   - title: Capital Go 2017 - Finite State Transducers in Go
-    video: https://www.youtube.com/watch?v=k97WC5ijB7U
+    video: https://www.youtube.com/embed/k97WC5ijB7U
     author: Marty Schoch
 ```

@@ -14,7 +14,7 @@ layout: default
     {% for talk in page.talks %}
     <li>
         {{ talk.title }} by {{ talk.author }}
-        <p>{% embed_video {{ talk.video }} %}</p>
+        <p><iframe class="embed-video" src="{{ talk.video | replace:'/watch?v=','/embed/' }}?showinfo=0" frameborder="0" allowfullscreen></iframe></p>
     </li>
     {% endfor %}
 </ul>
