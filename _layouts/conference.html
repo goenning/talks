@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<h2>{{ page.name }}</h2>
+
+<p>
+  {% for tag in page.tags %}
+    <code>{{ tag }}</code>
+  {% endfor %}
+</p>
+
+<ul>
+    {% for talk in page.talks %}
+    <li>
+        {{ talk.title }} by {{ talk.author }}
+        <p>{% embed_video {{ talk.video }} %}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+
+
