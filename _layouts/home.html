@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<ul>
+{% for conference_hash in site.data.conferences %}
+{% assign conference = conference_hash[1] %}
+  <li>
+      {{ conference.name }}
+      <ul>
+      {% for talk in conference.talks %}
+        <li>
+          <a href="{{ talk.video }}">
+            {{ talk.title }}
+          </a> by {{ talk.author }}
+        </li>
+      {% endfor %}
+      </ul>
+  </li>
+{% endfor %}
+</ul>
